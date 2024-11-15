@@ -1,0 +1,204 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+/* Home Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Heading Styles */
+.home-heading {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.home-subheading {
+  font-size: 1.25rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* Button Styles */
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.home-button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Adding pointer cursor for interactivity */
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* Hover Effects */
+.home-button:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Register Button Specific Styles */
+.register-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.register-btn:hover {
+  background-color: #45a049;
+  cursor: pointer; /* Ensure cursor shows pointer on hover */
+}
+
+.register-btn:active {
+  transform: translateY(1px); /* Slight press effect on click */
+}
+
+/* Login Button Specific Styles */
+.login-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+  cursor: pointer; /* Ensure cursor shows pointer on hover */
+}
+
+.login-btn:active {
+  transform: translateY(1px); /* Slight press effect on click */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .home-heading {
+    font-size: 2.5rem;
+  }
+
+  .home-subheading {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .home-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* login css */
+/* Professional Styles for Login Component */
+/* Basic styles remain the same */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+/* Styling the password input for "Show/Hide" icon */
+input[type="password"] {
+  padding-right: 2.5rem; /* Space for the icon */
+  background-image: url("eye-icon.png"); /* Use a URL to an eye icon image */
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1.2rem; /* Adjust size as needed */
+  cursor: pointer;
+}
+
+input[type="password"]:hover {
+  background-image: url("eye-icon-hover.png"); /* Change to an "active" eye icon if available */
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #306aa9;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* register */
+
